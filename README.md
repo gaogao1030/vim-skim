@@ -16,14 +16,16 @@ Install with vbundle
         git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
         popd
 
-2. Configure your vimrc for Vundle. Here's a bare-minimum vimrc that enables vim-slim :
+2. Configure your vimrc for Vundle. Here's a bare-minimum vimrc that enables vim-skim :
 
 
     ```vim
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
+    set rtp+=~/.vim/bundle/vundle.vim
+    call vundle#begin()
 
-    Plugin 'slim-template/vim-slim.git'
+    Plugin 'gaogao1030/vim-skim'
+    
+    call vundle#end()
 
     syntax enable
     filetype plugin indent on
